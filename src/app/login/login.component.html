@@ -1,0 +1,41 @@
+<div class="login-outer">
+    <div class="login-wrap">
+        <div class="logo-login">
+            <a href="javascript:void(0)"><img src="./assets/images/logo.png" alt=""></a>
+        </div>
+
+            <div class="login-box">
+                <h2>Login to your account</h2>
+                <div class="wrap">
+                    <label>Email</label>
+                    <input [(ngModel)]="username" type="text" placeholder="avilov.design@gmail.com" class="form-control">
+                    <!-- <input type="text" [(ngModel)]="email" #ctrl="ngModel" required placeholder="avilov.design@gmail.com" class="form-control"> -->
+                </div>
+
+                <div class="wrap">
+                    <label>Password</label>
+                    <input  [(ngModel)]="password" type="password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;" class="form-control field-password">
+                </div>
+                <div class="remember-wrap">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember me</label>
+                    </div>
+                    <a href="#" class="forget-password">Forgot password?</a>
+                </div>
+
+                <p class="error-p" *ngIf="errorMessage"><!-- {{errorMessage}} --> Plesae enter valid email and password</p>
+
+                <div class="login-button-wrap">
+                    <input type="submit" value="Login" (click)='submitting()'>
+                </div>
+            </div><!-- login-box -->
+
+
+
+        <div class="login-bot">
+            <a href="#">Don’t have an account?</a>
+            <a href="#">Create an account</a>
+        </div>
+    </div><!-- login-wrap -->
+</div>

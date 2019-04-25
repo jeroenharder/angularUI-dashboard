@@ -1,0 +1,72 @@
+<div class="container">
+    <div class="main-wrap">
+
+        <app-sidebar></app-sidebar>
+
+        <div class="content-section">
+
+            <div class="top-bar">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Main</a></li>
+                                <li class="breadcrumb-item"><a href="#">Name Page</a></li>
+                                <li class="breadcrumb-item active">MVP</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="search-section">
+                            <input type="text" placeholder="Search..." class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="outer-section">
+                <div class="secondary-nav clearfix">
+                    <div><a href="#details" class="details active"><span>Details</span></a></div>
+                    <div><a href="#dashboard" class="dashboard"><span>Dashboard</span></a></div>
+                    <div><a href="#tree" class="tree"><span>Tree</span></a></div>
+                    <div><a href="#chat" class="chat"><span>Chat</span></a></div>
+                    <div><a href="#tasks" class="tasks"><span>Tasks</span></a></div>
+                    <div><a href="#scrumboard" class="scrumboard"><span>Scrumboard</span></a></div>
+                    <div><a href="#documents" class="documents"><span>Documents</span></a></div>
+                </div>
+
+                <div class="tabs-content-wrap">
+                    <div class="tabs-content" id="details" style="display: block;">
+                        <app-details></app-details> 
+                    </div><!-- details -->
+
+                    <div class="tabs-content" id="dashboard">
+                        <app-dashboard></app-dashboard> 
+                    </div><!-- dashboard -->
+
+                    <div class="tabs-content" id="tree">
+                        <app-tree></app-tree> 
+                    </div><!-- tree -->
+
+                    <div class="tabs-content" id="chat">
+                        <app-chat></app-chat> 
+                    </div><!-- chat -->
+
+                    <div class="tabs-content" id="tasks">
+                        <app-tasks></app-tasks> 
+                    </div><!-- tasks -->
+
+                    <div class="tabs-content" id="scrumboard">
+                        <app-scrumboard></app-scrumboard> 
+                    </div><!-- scrumboard -->
+
+                    <div class="tabs-content" id="documents">
+                        <app-documents></app-documents> 
+                    </div><!-- documents -->
+                </div><!-- tabs-content-wrap -->
+
+            </div><!-- outer-section -->
+        </div><!-- content-section -->
+    </div><!-- main-wrap -->
+</div>
